@@ -28,6 +28,8 @@ Compras iguais ou superiores a R$ 500,00 - 15% de desconto
         System.out.format("Total da Compra: %.2f | Desconto: %.2f", valor * (1-desconto), desconto*100);
         System.out.println('%');
 
+        scan.close();
+
     }
 
 }
