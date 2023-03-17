@@ -4,16 +4,14 @@ import java.util.Scanner;
 public class Ex01 {
     public static void main(String[] args) {
         
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Insira um numero inteiro: ");
+        int n = scan.nextInt();
 
-        System.out.println("Entre com um número inteiro: ");
-        int numero = sc.nextInt();
+        System.out.format("Antecessor: %s\n", n-1);
+        System.out.format("Sucessor: %s", n+1);
 
-        System.out.println( "Antecessor: " + (numero - 1) + " Sucessor: " + (numero + 1));
-
-        // System.out.format("Antecessor: %s Sucessor: %s", numero - 1, numero + 1);
-
-        sc.close();
+        scan.close();
 
     }
     
