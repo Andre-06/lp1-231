@@ -8,20 +8,6 @@ public class Ex04 {
         System.out.println("Insira o código: ");
         String cod = scan.nextLine();
         
-        /*
-         * Exemplos válidos:
-
-BR0001X
-BR1236X
-BR9999X
-Exemplos inválidos:
-
-br0001X
-BR126X
-BR99999X
-BR9999Y
-         */
-
         int nums;
         try{
             nums = Integer.parseInt(cod.substring(2, 6));
