@@ -13,6 +13,7 @@ public class Ex04 {
             nums = Integer.parseInt(cod.substring(2, 6));
         } catch (NumberFormatException exception){
             System.out.println("Código Inválido");
+            scan.close();
             return;
         }
         
@@ -23,8 +24,6 @@ public class Ex04 {
         }
 
         scan.close();
-
-        
     }
     
 }
