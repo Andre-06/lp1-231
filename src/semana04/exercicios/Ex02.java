@@ -4,17 +4,15 @@ import java.util.Scanner;
 public class Ex02 {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Insira três numeros abaixo: ");
+        float n1 = scan.nextFloat();
+        float n2 = scan.nextFloat();
+        float n3 = scan.nextFloat();
 
-        System.out.println("Entre com três números inteiro: ");
-        float numero = sc.nextFloat();
-        float numero1 = sc.nextFloat();
-        float numero2 = sc.nextFloat();
+        System.out.format("Media Aritmética: %s", (n1 + n2 + n3)/3);
 
-        System.out.println("Média Aritmética: " + ((numero + numero1 + numero2) / 3) );
+        scan.close();
 
-        // System.out.format("Média Aritmética: %f", ((numero + numero1 + numero2) / 3) );
-
-        sc.close();
     }
 }
