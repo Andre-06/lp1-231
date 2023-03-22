@@ -1,3 +1,4 @@
+package semana05.exercicios;
 import java.util.Scanner;
 
 public class Ex02 {
@@ -9,6 +10,8 @@ public class Ex02 {
         float altura = sc.nextFloat();
         System.out.print("Insira seu peso em Kg: ");
         float peso = sc.nextFloat();
+        
+        sc.close();
 
         float imc = ( peso / (altura * altura));
         final float IMCIDEALMINIMO = 18.5f;
@@ -30,14 +33,18 @@ public class Ex02 {
         } else if (imc < 40f) {
             System.out.print("Obesidade de Classe 2");
         } else {
-            System.out.print("Obesidade de Classe 2");
+            System.out.print("Obesidade de Classe 3");
         } 
 
         System.out.printf(" (%.2f IMC)\n", imc);
         if (! pesoNormal){
-            System.out.println("Você precisa " + (sobrepeso?"perder aproximadamente " + (peso - (IMCIDEALMAXIMO * (altura * altura))) : "ganhar aproximadamente"  + (peso + (IMCIDEALMINIMO * (altura * altura)))));
+            System.out.print("Você precisa ");
+            if (sobrepeso){
+                System.out.printf("perder aproximadante %.3f", (peso - (IMCIDEALMAXIMO * (altura * altura))));
+            } else {
+                System.out.printf("ganhar aproximadante %.3f", ((IMCIDEALMINIMO * (altura * altura)) - peso));
+            }
         }
-        sc.close();
 
     }
 }
