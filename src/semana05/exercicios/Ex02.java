@@ -16,21 +16,26 @@ public class Ex02 {
         float imc = ( peso / (altura * altura));
         final float IMCIDEALMINIMO = 18.5f;
         final float IMCIDEALMAXIMO = 24.9f;
+        final float BAIXO_PESO = 18.5f;
+        final float PESO_NORMAL = 25f;
+        final float EXCESSO_DE_PESO = 30f;
+        final float OBESIDADE_1 = 35f;
+        final float OBESIDADE_2 = 40f;
 
         System.out.print("Você esta em ");
         var pesoNormal = false;
         var sobrepeso = true;
-        if (imc < 18.5) {
+        if (imc < BAIXO_PESO) {
             System.out.print("Baixo peso");
             sobrepeso = false;
-        } else if (imc < 25f) {
+        } else if (imc < PESO_NORMAL) {
             System.out.print("Peso normal");
             pesoNormal = true;
-        } else if (imc < 30f) {
+        } else if (imc < EXCESSO_DE_PESO) {
             System.out.print("Excesso de peso");
-        } else if (imc < 35f) {
+        } else if (imc < OBESIDADE_1) {
             System.out.print("Obesidade de Classe 1");
-        } else if (imc < 40f) {
+        } else if (imc < OBESIDADE_2) {
             System.out.print("Obesidade de Classe 2");
         } else {
             System.out.print("Obesidade de Classe 3");
@@ -44,6 +49,7 @@ public class Ex02 {
             } else {
                 System.out.printf("ganhar aproximadante %.3f", ((IMCIDEALMINIMO * (altura * altura)) - peso));
             }
+
         }
 
     }
