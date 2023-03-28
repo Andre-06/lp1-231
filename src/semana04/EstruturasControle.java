@@ -80,15 +80,8 @@ public class EstruturasControle {
                   ]
         */
 
-        System.out.println(nomes[0]);
-        System.out.println(nomes[1]);
-        System.out.println(nomes[2]);
-        
-        for (int i = 0; i < nomes.length; i++) {
-            System.out.println(nomes[i]);
-        }
-
-        // foreach 
+        System.out.println(nom
+        int [palavra.length()] ocorrencias;
         for (String nome : nomes) {
             System.out.println(nome);
         }
