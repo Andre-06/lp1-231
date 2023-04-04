@@ -79,8 +79,7 @@ public class EstruturasControle {
                    ['M', 'a', 'r', 'c', 'i', 'a']
                   ]
         */
-        char[] nome__ = {'a', 'b', 'c'};
-
+        
         for (String nome : nomes) {
             System.out.println(nome);
         }

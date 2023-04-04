@@ -1,6 +1,5 @@
 package semana06.exercicios.ex02;
 
-import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
