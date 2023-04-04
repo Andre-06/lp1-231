@@ -26,7 +26,8 @@ public class CalculadoraIMC {
     }
     
     public static float calcularPesoIdeal(float imc, float altura, float peso) {
-        if (imc < BAIXO_PESO) return (IMC_IDEAL_MINIMO * (altura * altura)) - peso;
-        else return peso - (IMC_IDEAL_MAXIMO * (altura * altura));
+        if (imc < IMC_IDEAL_MINIMO) return (IMC_IDEAL_MINIMO * (altura * altura)) - peso;
+        else if (imc > IMC_IDEAL_MAXIMO) return peso - (IMC_IDEAL_MAXIMO * (altura * altura));
+        else return 0f;
     }
 }

@@ -1,7 +1,6 @@
 package semana06;
 
 public class Calculadora {
-    private static final Exception NumberFormatException = null;
     // metodo que soma dois numeros e retorna o resultado
     public static double somar(double a, double b) {
         return a + b;
