@@ -79,9 +79,8 @@ public class EstruturasControle {
                    ['M', 'a', 'r', 'c', 'i', 'a']
                   ]
         */
+        char[] nome__ = {'a', 'b', 'c'};
 
-        System.out.println(nom
-        int [palavra.length()] ocorrencias;
         for (String nome : nomes) {
             System.out.println(nome);
         }

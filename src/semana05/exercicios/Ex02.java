@@ -14,8 +14,8 @@ public class Ex02 {
         sc.close();
 
         float imc = ( peso / (altura * altura));
-        final float IMCIDEALMINIMO = 18.5f;
-        final float IMCIDEALMAXIMO = 24.9f;
+        final float IMC_IDEAL_MINIMO = 18.5f;
+        final float IMC_IDEAL_MAXIMO = 24.9f;
         final float BAIXO_PESO = 18.5f;
         final float PESO_NORMAL = 25f;
         final float EXCESSO_DE_PESO = 30f;
@@ -45,9 +45,9 @@ public class Ex02 {
         if (! pesoNormal){
             System.out.print("Você precisa ");
             if (sobrepeso){
-                System.out.printf("perder aproximadante %.3f", (peso - (IMCIDEALMAXIMO * (altura * altura))));
+                System.out.printf("perder aproximadante %.3f", (peso - (IMC_IDEAL_MAXIMO * (altura * altura))));
             } else {
-                System.out.printf("ganhar aproximadante %.3f", ((IMCIDEALMINIMO * (altura * altura)) - peso));
+                System.out.printf("ganhar aproximadante %.3f", ((IMC_IDEAL_MINIMO * (altura * altura)) - peso));
             }
 
         }
