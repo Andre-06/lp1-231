@@ -1,5 +1,6 @@
 package semana07;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -78,7 +79,7 @@ public class ExerciciosRevisaoTest {
         double[] soma = ExerciciosRevisao.criarArrayDeTresValores(n1, n2, n3);
 
         //Assert
-        assertEquals(num, soma);
+        assertArrayEquals(num, soma);
     }
 
     @Test
@@ -132,7 +133,7 @@ public class ExerciciosRevisaoTest {
         int[] soma = ExerciciosRevisao.juntarDoisArrays(num1, num2);
 
         //Assert
-        assertEquals(num, soma);
+        assertArrayEquals(num, soma);
     }
     
 }

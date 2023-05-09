@@ -39,7 +39,7 @@ public class ExerciciosRevisao {
     }
     public static int[] juntarDoisArrays(int[] arr1, int[] arr2) {
         int[] arr = new int [(arr1.length + arr2.length)];
-        for (int i = 0, j = 0; i < arr.length-1; i=+2, j++) {
+        for (int i = 0, j = 0; i < arr.length-1; i+=2, j++) {
             arr[i] = arr1[j];
             arr[i+1] = arr2[j];
         }
