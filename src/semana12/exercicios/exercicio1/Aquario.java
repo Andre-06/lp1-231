@@ -1,7 +1,20 @@
-package semana11;
+package semana12.exercicios.exercicio1;
 
 public class Aquario {
     float altura, largura, comprimento;
+
+    public Aquario(float altura, float largura, float comprimento){
+        this.altura = altura;
+        this.largura = largura;
+        this.comprimento = comprimento;
+    }
+
+    public Aquario(float valorUnico){
+        this.altura = valorUnico;
+        this.largura = valorUnico;
+        this.comprimento = valorUnico;
+    }
+
 
     public float calcularVolume() {
         return (altura*largura*comprimento)/1000;

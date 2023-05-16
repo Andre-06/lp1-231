@@ -1,4 +1,4 @@
-package semana11;
+package semana12.exercicios.exercicio2;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -13,9 +13,7 @@ public class PessoaTest {
         float altura = 2.10f;
         float peso = 50.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         int classificacao = pessoa.getFaixa();
         
         //Assert
@@ -29,9 +27,7 @@ public class PessoaTest {
         float altura = 1.75f;
         float peso = 60.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         int classificacao = pessoa.getFaixa();
         
         //Assert
@@ -45,9 +41,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 80.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         int classificacao = pessoa.getFaixa();
         
         //Assert
@@ -61,9 +55,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 100.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         int classificacao = pessoa.getFaixa();
         
         //Assert
@@ -77,9 +69,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 110.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         int classificacao = pessoa.getFaixa();
         
         //Assert
@@ -93,9 +83,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 150.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         int classificacao = pessoa.getFaixa();
         
         //Assert
@@ -109,9 +97,7 @@ public class PessoaTest {
         float altura = 2.10f;
         float peso = 50.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         float imc = pessoa.calcularImc();
         
         //Assert
@@ -125,9 +111,7 @@ public class PessoaTest {
         float altura = 1.75f;
         float peso = 60.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         float imc = pessoa.calcularImc();
         
         //Assert
@@ -141,9 +125,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 80.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         float imc = pessoa.calcularImc();
         
         //Assert
@@ -157,9 +139,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 100.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         float imc = pessoa.calcularImc();
         
         //Assert
@@ -173,9 +153,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 110.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         float imc = pessoa.calcularImc();
         
         //Assert
@@ -189,9 +167,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 150.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         float imc = pessoa.calcularImc();
         
         //Assert
@@ -206,9 +182,7 @@ public class PessoaTest {
         float altura = 2.10f;
         float peso = 50.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         String pesoIdeal = pessoa.getSituacao();
         
         //Assert
@@ -222,9 +196,7 @@ public class PessoaTest {
         float altura = 1.75f;
         float peso = 60.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         String pesoIdeal = pessoa.getSituacao();
         
         //Assert
@@ -238,9 +210,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 80.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         String pesoIdeal = pessoa.getSituacao();
         
         //Assert
@@ -254,9 +224,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 100.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         String pesoIdeal = pessoa.getSituacao();
         
         //Assert
@@ -270,9 +238,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 110.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         String pesoIdeal = pessoa.getSituacao();
         
         //Assert
@@ -286,9 +252,7 @@ public class PessoaTest {
         float altura = 1.70f;
         float peso = 150.0f;
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.altura = altura;
-        pessoa.peso = peso;
+        Pessoa pessoa = new Pessoa(altura, peso);
         String pesoIdeal = pessoa.getSituacao();
         
         //Assert

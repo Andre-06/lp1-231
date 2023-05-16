@@ -1,4 +1,4 @@
-package semana11;
+package semana11.exercicio1;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -55,7 +55,6 @@ public class AquarioTest {
         aquario.largura = largura;
         aquario.comprimento = profundidade;
         //Act
-        float volume = aquario.calcularVolume();
         float filtragem = aquario.calcularFiltragemMinima();
         
         //Assert
@@ -74,7 +73,6 @@ public class AquarioTest {
         aquario.largura = largura;
         aquario.comprimento = profundidade;
         //Act
-        float volume = aquario.calcularVolume();
         float filtragem = aquario.calcularFiltragemMinima();
         
         //Assert
@@ -93,7 +91,6 @@ public class AquarioTest {
         aquario.largura = largura;
         aquario.comprimento = profundidade;
         //Act
-        float volume = aquario.calcularVolume();
         float filtragem = aquario.calcularFiltragemMaxima();
         
         //Assert
@@ -112,7 +109,6 @@ public class AquarioTest {
         aquario.largura = largura;
         aquario.comprimento = profundidade;
         //Act
-        float volume = aquario.calcularVolume();
         float filtragem = aquario.calcularFiltragemMaxima();
         
         //Assert
@@ -133,7 +129,6 @@ public class AquarioTest {
         float tempMin = 56f;
         float tempMax = 23f;
         //Act
-        float volume = aquario.calcularVolume();
         float potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
         //Assert
         assertEquals(10.395000457763672, potencia);
@@ -153,7 +148,6 @@ public class AquarioTest {
         float tempMin = 56.35f;
         float tempMax = 13.48f;
         //Act
-        float volume = aquario.calcularVolume();
         float potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
         //Assert
         assertEquals(14.381811141967773, potencia);
@@ -173,7 +167,6 @@ public class AquarioTest {
         float tempMin = 13f;
         float tempMax = 98f;
         //Act
-        float volume = aquario.calcularVolume();
         float potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
         //Assert
         assertEquals(-26.775001525878906, potencia);
@@ -193,7 +186,6 @@ public class AquarioTest {
         float tempMin = 13.65f;
         float tempMax = 56.5478f;
         //Act
-        float volume = aquario.calcularVolume();
         float potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
         //Assert
         assertEquals(-14.39113712310791, potencia);

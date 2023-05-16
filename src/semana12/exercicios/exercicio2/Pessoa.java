@@ -1,4 +1,4 @@
-package semana11;
+package semana12.exercicios.exercicio2;
 
 public class Pessoa {
     float altura;
@@ -14,6 +14,11 @@ public class Pessoa {
     final float OBESIDADE_1 = 35f;
     final float OBESIDADE_2 = 40f;
     public static final String[] CLASSIFICACAO = {"Baixo peso", "Peso normal", "Execsso de peso", "Obesidade de Classe 1", "Obesidade de Classe 2", "Obesidade de Classe 3"};
+
+    public Pessoa(float altura, float peso){
+        this.altura = altura;
+        this.peso = peso;
+    }
 
     public float calcularImc() {
         return  peso / (altura * altura);
