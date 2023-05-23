@@ -202,7 +202,7 @@ public class ContaTest {
     }
 
     @Test
-    public void imprimirRecibo(){
+    public void imprimirRecibo() throws InterruptedException{
         int codigo = 0;
         String nome = "Joãozinho";
         int codigo2 = 1;
@@ -212,32 +212,120 @@ public class ContaTest {
         Conta conta2 = new Conta(codigo2, nome2);
 
         conta.depositar(5000);
+        Thread.sleep(10);
         conta.sacar(20);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta.sacar(-20);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta.sacar(0);
+        Thread.sleep(10);
         conta.depositar(5010);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta.depositar(-10);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta.depositar(0);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta2.depositar(5000);
+        Thread.sleep(10);
         conta.transferir(50, conta2);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta2.depositar(5000);
+        Thread.sleep(10);
         conta.transferir(5050, conta2);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta2.depositar(5000);
+        Thread.sleep(10);
         conta.transferir(-50, conta2);
+        Thread.sleep(10);
         conta.depositar(5000);
+        Thread.sleep(10);
         conta2.depositar(5000);
+        Thread.sleep(10);
         conta.transferir(0, conta2);
+        Thread.sleep(10);
         
         conta.recibo.imprimirRecibo();
         conta2.recibo.imprimirRecibo();
+
+    }
+
+    @Test
+    public void imprimirExtrato() throws InterruptedException{
+        int codigo = 0;
+        String nome = "Joãozinho";
+        int codigo2 = 1;
+        String nome2 = "Mariazinha";
+
+        Conta conta = new Conta(codigo, nome);
+        Conta conta2 = new Conta(codigo2, nome2);
+
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta.sacar(20);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta.sacar(-20);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta.sacar(0);
+        Thread.sleep(10);
+        conta.depositar(5010);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta.depositar(-10);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta.depositar(0);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta2.depositar(5000);
+        Thread.sleep(10);
+        conta.transferir(50, conta2);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta2.depositar(5000);
+        Thread.sleep(10);
+        conta.transferir(5050, conta2);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta2.depositar(5000);
+        Thread.sleep(10);
+        conta.transferir(-50, conta2);
+        Thread.sleep(10);
+        conta.depositar(5000);
+        Thread.sleep(10);
+        conta2.depositar(5000);
+        Thread.sleep(10);
+        conta.transferir(0, conta2);
+        Thread.sleep(10);
+        
+        conta.recibo.imprimirExtrato();
+        conta2.recibo.imprimirExtrato();
 
     }
 }

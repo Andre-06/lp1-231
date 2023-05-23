@@ -1,13 +1,5 @@
 package semana12.exercicios.exercicio3;
 
-import java.lang.reflect.Array;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-
 /*
  * conta = {"cod":1, "nome":"Salve Salve", "açoes":{"sacar":[{"id":"sadalsdja", "data":"20-20-20", "valor":4000}], 
  *                                                  "depositar":[{"id":"sadsadas", "data":"202020", "valor":6000}],
@@ -29,21 +21,21 @@ public class Conta {
 
     public double sacar(double dinheiro) {
         if (dinheiro > saldo || dinheiro <= 0){ 
-            recibo.registrar(dinheiro, saldo, true, "sacar");
+            recibo.registrarSaque(dinheiro, saldo, true);
             return -1;
         }
         saldo -= dinheiro; 
-        recibo.registrar(dinheiro, saldo, false, "sacar");;
+        recibo.registrarSaque(dinheiro, saldo, false);;
         return saldo;
     }
 
     public double depositar(double dinheiro) {
         if (dinheiro <= 0) {
-            recibo.registrar(dinheiro, saldo, true, "depositar");
+            recibo.registrarDeposito(dinheiro, saldo, true);
             return -1;
         }
         saldo += dinheiro;
-        recibo.registrar(dinheiro, saldo, false, "depositar");
+        recibo.registrarDeposito(dinheiro, saldo, false);
         return saldo;
     }
 
@@ -51,13 +43,13 @@ public class Conta {
         double[] execao = {-1, -1};
         if (dinheiro > saldo || dinheiro <= 0) {   
             double[] saldos = {saldo, conta.saldo};
-            recibo.registrar(dinheiro, saldos, true, conta);
+            recibo.registrarTransferencia(dinheiro, saldos[0], true, conta);
             return execao;
         }
-        sacar(dinheiro);
+        saldo -= dinheiro;
         conta.depositar(dinheiro);
         double[] saldos = {saldo, conta.saldo};
-        recibo.registrar(dinheiro, saldos, false, conta);
+        recibo.registrarTransferencia(dinheiro, saldos[0], false, conta);
         return saldos;
     }
     
