@@ -11,30 +11,30 @@ public class AquarioTest {
     public void calculaVolumeComNumerosInteiros() {
         //AAA
         //Arrange
-        float altura = 2f;
-        float largura = 50f;
-        float profundidade = 63f;
+        double altura = 2;
+        double largura = 50;
+        double profundidade = 63;
         Aquario aquario = new Aquario(altura, largura, profundidade);
         //Act
-        float volume = aquario.calcularVolume();
+        double volume = aquario.calcularVolume();
         
         //Assert
-        assertEquals(6.300000190734863, volume);
+        assertEquals(6.3, volume);
     }
 
     @Test
     public void calculaVolumeComNumerosReais() {
         //AAA
         //Arrange
-        float altura = 2.10f;
-        float largura = 50.0f;
-        float profundidade = 63.9f;
+        double altura = 2.10;
+        double largura = 50.0;
+        double profundidade = 63.9;
         Aquario aquario = new Aquario(altura, largura, profundidade);
         //Act
-        float volume = aquario.calcularVolume();
+        double volume = aquario.calcularVolume();
         
         //Assert
-        assertEquals(6.709499359130859, volume);
+        assertEquals(6.7095, volume);
     }
 
 
@@ -42,227 +42,238 @@ public class AquarioTest {
     public void calculaFiltragemMinimaComNumerosInteiros() {
         //AAA
         //Arrange
-        float altura = 2f;
-        float largura = 50;
-        float profundidade = 63f;
+        double altura = 2;
+        double largura = 50;
+        double profundidade = 63;
         Aquario aquario = new Aquario(altura, largura, profundidade);
         //Act
-        float filtragem = aquario.calcularFiltragemMinima();
+        double filtragem = aquario.calcularFiltragemMinima();
         
         //Assert
-        assertEquals(12.600000381469727, filtragem);
+        assertEquals(12.6, filtragem);
     }
 
     @Test
     public void calculaFiltragemMinimaComNumerosReais() {
         //AAA
         //Arrange
-        float altura = 2.10f;
-        float largura = 50.0f;
-        float profundidade = 63.9f;
+        double altura = 2.10;
+        double largura = 50.0;
+        double profundidade = 63.9;
         Aquario aquario = new Aquario(altura, largura, profundidade);
         //Act
-        float filtragem = aquario.calcularFiltragemMinima();
+        double filtragem = aquario.calcularFiltragemMinima();
         
         //Assert
-        assertEquals(13.418998718261719, filtragem);
+        assertEquals(13.419, filtragem);
     }
 
     @Test
     public void calculaFiltragemMaximaComNumerosInteiros() {
         //AAA
         //Arrange
-        float altura = 2f;
-        float largura = 50;
-        float profundidade = 63f;
+        double altura = 2;
+        double largura = 50;
+        double profundidade = 63;
         Aquario aquario = new Aquario(altura, largura, profundidade);
         //Act
-        float filtragem = aquario.calcularFiltragemMaxima();
+        double filtragem = aquario.calcularFiltragemMaxima();
         
         //Assert
-        assertEquals(18.900001525878906, filtragem);
+        assertEquals(18.9, filtragem);
     }
 
     @Test
     public void calculaFiltragemMaximaComNumerosReais() {
         //AAA
         //Arrange
-        float altura = 2.10f;
-        float largura = 50.0f;
-        float profundidade = 63.9f;
+        double altura = 2.10;
+        double largura = 50.0;
+        double profundidade = 63.9;
         Aquario aquario = new Aquario(altura, largura, profundidade);
         //Act
-        float filtragem = aquario.calcularFiltragemMaxima();
+        double filtragem = aquario.calcularFiltragemMaxima();
         
         //Assert
-        assertEquals(20.128498077392578, filtragem);
+        assertEquals(20.128500000000003, filtragem);
     }
 
     @Test
     public void calculaPotenciaPositivaNegativaComNumerosInteiros() {
         //AAA
         //Arrange
-        float altura = 2f;
-        float largura = 50;
-        float profundidade = 63f;
+        double altura = 2;
+        double largura = 50;
+        double profundidade = 63;
         Aquario aquario = new Aquario(altura, largura, profundidade);
-        float tempMin = 56f;
-        float tempMax = 23f;
+        double tempMin = 56;
+        double tempMax = 23;
         //Act
-        float potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
+        double potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
         //Assert
-        assertEquals(10.395000457763672, potencia);
+        assertEquals(10.39500015489757, potencia);
     }
 
     @Test
     public void calculaPotenciaPositivaNegativaComNumerosReais() {
         //AAA
         //Arrange
-        float altura = 2.10f;
-        float largura = 50.0f;
-        float profundidade = 63.9f;
+        double altura = 2.10;
+        double largura = 50.0;
+        double profundidade = 63.9;
         Aquario aquario = new Aquario(altura, largura, profundidade);
-        float tempMin = 56.35f;
-        float tempMax = 13.48f;
+        double tempMin = 56.35;
+        double tempMax = 13.48;
         //Act
-        float potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
+        double potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
         //Assert
-        assertEquals(14.381811141967773, potencia);
+        assertEquals(14.381813464305718, potencia);
     }
 
     @Test
     public void calculaPotenciaNegativaComNumerosInteiros() {
         //AAA
         //Arrange
-        float altura = 2f;
-        float largura = 50;
-        float profundidade = 63f;
+        double altura = 2;
+        double largura = 50;
+        double profundidade = 63;
         Aquario aquario = new Aquario(altura, largura, profundidade);
-        float tempMin = 13f;
-        float tempMax = 98f;
+        double tempMin = 13;
+        double tempMax = 98;
         //Act
-        float potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
+        double potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
         //Assert
-        assertEquals(-26.775001525878906, potencia);
+        assertEquals(-26.775000398978587, potencia);
     }
 
     @Test
     public void calculaPotenciaNegativaComNumerosReais() {
         //AAA
         //Arrange
-        float altura = 2.10f;
-        float largura = 50.0f;
-        float profundidade = 63.9f;
+        double altura = 2.10;
+        double largura = 50.0;
+        double profundidade = 63.9;
         Aquario aquario = new Aquario(altura, largura, profundidade);
-        float tempMin = 13.65f;
-        float tempMax = 56.5478f;
+        double tempMin = 13.65;
+        double tempMax = 56.5478;
         //Act
-        float potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
+        double potencia = aquario.calcularPotenciaTermostato(tempMin, tempMax);
         //Assert
-        assertEquals(-14.39113712310791, potencia);
+        assertEquals(-14.391139669444689, potencia);
     }
     
     @Test
-    public void controiComLarguraNegativaEAlturaZeroEComprimentoNegativo() {
-        assertThrows(IllegalArgumentException.class, () -> new Aquario(-5f, 0f, -5f));
+    public void constroiComLarguraNegativa() {
+        assertThrows(IllegalArgumentException.class, () -> new Aquario(-5.0, 5.0, 5.0));
     }
     
     @Test
-    public void controiComLarguraZeroEAlturaNegativaEComprimentoZero() {
-        assertThrows(IllegalArgumentException.class, () -> new Aquario(0f, -5f, 0f));
+    public void constroiComLarguraZero() {
+        assertThrows(IllegalArgumentException.class, () -> new Aquario(0.0, 5.0, 5.0));
     }
     
     @Test
-    public void controiComLarguraZeroEAlturaZeroEComprimentoPositivo() {
-        assertThrows(IllegalArgumentException.class, () -> new Aquario(0f, 0f, 5f));
+    public void constroiComAlturaZero() {
+        assertThrows(IllegalArgumentException.class, () -> new Aquario(5.0, 0.0, 5.0));
     }
     @Test
-    public void controiComLarguraNegativaEAlturaNegativaEComprimentoNegativo() {
-        assertThrows(IllegalArgumentException.class, () -> new Aquario(-8f, -9f, -5f));
-    }
-    
-    @Test
-    public void controiComLarguraPositivaEAlturaNegativaEComprimentoZero() {
-        assertThrows(IllegalArgumentException.class, () -> new Aquario(8f, -9f, 0f));
+    public void constroiComAlturaNegativa() {
+        assertThrows(IllegalArgumentException.class, () -> new Aquario(8.0, -9.0, 5.0));
     }
     
     @Test
-    public void controiComLarguraNegativaEAlturaPositivaEComprimentoNegativo() {
-        assertThrows(IllegalArgumentException.class, () -> new Aquario(-8f, 9f, -5f));
+    public void constroiComComprimentoZero() {
+        assertThrows(IllegalArgumentException.class, () -> new Aquario(8.0, 9.0, 0.0));
     }
-
+    
     @Test
-    public void setComValoresNegativos() {
+    public void constroiComComprimentoNegativo() {
+        assertThrows(IllegalArgumentException.class, () -> new Aquario(8.0, 9.0, -5.0));
+    }
+    
+    @Test
+    public void setComLarguraNegativa() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Aquario aquario = new Aquario(5f, 5f, 8f);
-            aquario.setLargura(-5f);
-            aquario.setAltura(-5f);
-            aquario.setComprimento(-5f);
+            Aquario aquario = new Aquario(5.0);
+            aquario.setLargura(-5.0);
         });
     }
     
     @Test
-    public void setComValoresZero() {
+    public void setComLarguraZero() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Aquario aquario = new Aquario(5f, 5f, 8f);
-            aquario.setLargura(0f);
-            aquario.setAltura(0f);
-            aquario.setComprimento(0f);
+            Aquario aquario = new Aquario(5.0);
+            aquario.setLargura(0.0);
         });
     }
     
     @Test
-    public void setComPositivosENegativos() {
+    public void setComAlturaZero() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Aquario aquario = new Aquario(5f, 5f, 8f);
-            aquario.setLargura(5f);
-            aquario.setAltura(-5f);
-            aquario.setComprimento(-5f);
+            Aquario aquario = new Aquario(5.0);
+            aquario.setAltura(0.0);
+        });
+    }
+    @Test
+    public void setComAlturaNegativa() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            Aquario aquario = new Aquario(5.0);
+            aquario.setAltura(-5.0);
         });
     }
     
     @Test
-    public void setComPositivosEZeros() {
+    public void setComComprimentoZero() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Aquario aquario = new Aquario(5f, 5f, 8f);
-            aquario.setLargura(5f);
-            aquario.setAltura(5f);
-            aquario.setComprimento(0f);
+            Aquario aquario = new Aquario(5.0);
+            aquario.setComprimento(0.0);
         });
     }
     
     @Test
-    public void setComPositivosNegativosEZero() {
+    public void setComComprimentoNegativo() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Aquario aquario = new Aquario(5f, 5f, 8f);
-            aquario.setLargura(5f);
-            aquario.setAltura(-5f);
-            aquario.setComprimento(0f);
+            Aquario aquario = new Aquario(5.0);
+            aquario.setComprimento(-5.0);
         });
     }
-    
-    @Test
-    public void setComZeros() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Aquario aquario = new Aquario(5f, 5f, 8f);
-            aquario.setLargura(0f);
-            aquario.setAltura(0f);
-            aquario.setComprimento(0f);
-        });
-    }
+        
+   @Test
+    public void constroiComValorValidoAltura() {
+        Aquario aquario = new Aquario(5.0);
+        assertEquals(aquario.getAltura(), 5);
+    }     
 
    @Test
-    public void constroiComValorValido() {
-        Aquario aquario = new Aquario(5f, 5f, 5f);
-        assertEquals((aquario.getAltura() + aquario.getLargura() + aquario.getComprimento()), 15);
+    public void constroiComValorValidoLargura() {
+        Aquario aquario = new Aquario(5.0);
+        assertEquals(aquario.getLargura(), 5);
+    }  
+       
+   @Test
+    public void constroiComValorValidoComrpimento() {
+        Aquario aquario = new Aquario(5.0);
+        assertEquals(aquario.getComprimento(), 5);
     }
+        
+   @Test
+    public void setComValorValidoAltura() {
+        Aquario aquario = new Aquario(5.0);
+        aquario.setAltura(2);
+        assertEquals(aquario.getAltura(), 2);
+    }     
 
-    @Test
-    public void setComValorValido() {
-        Aquario aquario = new Aquario(5f, 5f, 5f);
-        aquario.setLargura(10f);
-        aquario.setAltura(10f);
-        aquario.setComprimento(10f);
-        assertEquals((aquario.getAltura() + aquario.getLargura() + aquario.getComprimento()), 30);
+   @Test
+    public void setComValorValidoLargura() {
+        Aquario aquario = new Aquario(5.0);
+        aquario.setLargura(2);
+        assertEquals(aquario.getLargura(), 2);
+    }  
+       
+   @Test
+    public void setComValorValidoComrpimento() {
+        Aquario aquario = new Aquario(5.0);
+        aquario.setComprimento(2);
+        assertEquals(aquario.getComprimento(), 2);
     }
 }

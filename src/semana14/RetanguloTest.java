@@ -4,103 +4,84 @@ import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class RetanguloTest {
+public class RetanguloTest {    
+
     @Test
-    public void controiComBaseNegativaEAlturaZero() {
-        assertThrows(IllegalArgumentException.class, () -> new Retangulo(-5, 0));
+    public void constroiComBaseNegativa() {
+        assertThrows(IllegalArgumentException.class, () -> new Retangulo(-5.0, 5.0));
     }
     
     @Test
-    public void controiComBaseZeroEAlturaNegativa() {
-        assertThrows(IllegalArgumentException.class, () -> new Retangulo(0, -5));
+    public void constroiComBaseZero() {
+        assertThrows(IllegalArgumentException.class, () -> new Retangulo(0.0, 5.0));
     }
     
     @Test
-    public void controiComBaseZeroEAlturaZero() {
-        assertThrows(IllegalArgumentException.class, () -> new Retangulo(0, 0));
-    }
-    
-    @Test
-    public void controiComBaseNegativaEAlturaNegativa() {
-        assertThrows(IllegalArgumentException.class, () -> new Retangulo(-8, -9));
-    }
-    
-    @Test
-    public void controiComBasePositivaEAlturaNegativa() {
-        assertThrows(IllegalArgumentException.class, () -> new Retangulo(8, -9));
-    }
-    
-    @Test
-    public void controiComBaseNegativaEAlturaPositiva() {
-        assertThrows(IllegalArgumentException.class, () -> new Retangulo(-8, 9));
+    public void constroiComAlturaZero() {
+        assertThrows(IllegalArgumentException.class, () -> new Retangulo(5.0, 0.0));
     }
 
     @Test
-    public void setComBaseNegativaEAlturaZero() {
+    public void constroiComAlturaNegativa() {
+        assertThrows(IllegalArgumentException.class, () -> new Retangulo(8.0, -9.0));
+    }
+    
+    @Test
+    public void setComBaseNegativa() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Retangulo retangulo = new Retangulo(-5, 0);
-            retangulo.setBase(-5);
-            retangulo.setAltura(-5);
+            Retangulo pessoa = new Retangulo(5.0, 5.0);
+            pessoa.setBase(-5.0);
         });
     }
     
     @Test
-    public void setComBaseZeroEAlturaNegativa() {
+    public void setComBaseZero() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Retangulo retangulo = new Retangulo(0, -8);
-            retangulo.setBase(-5);
-            retangulo.setAltura(-5);
+            Retangulo pessoa = new Retangulo(5.0, 5.0);
+            pessoa.setBase(0.0);
         });
     }
     
     @Test
-    public void setComBaseZeroEAlturaZero() {
+    public void setComAlturaZero() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Retangulo retangulo = new Retangulo(0, 0);
-            retangulo.setBase(-5);
-            retangulo.setAltura(-5);
+            Retangulo pessoa = new Retangulo(5.0, 5.0);
+            pessoa.setAltura(0.0);
         });
     }
     
     @Test
-    public void setComBaseNegativaEAlturaNegativa() {
+    public void setComAlturaNegativa() {
         assertThrows(IllegalArgumentException.class, () -> {
-            Retangulo retangulo = new Retangulo(-5, -8);
-            retangulo.setBase(-5);
-            retangulo.setAltura(-5);
-        });
-    }
-    
-    @Test
-    public void setComBasePositivaEAlturaNegativa() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Retangulo retangulo = new Retangulo(5, -8);
-            retangulo.setBase(-5);
-            retangulo.setAltura(-5);
-        });
-    }
-    
-    @Test
-    public void setComBaseNegativaEAlturaPositiva() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Retangulo retangulo = new Retangulo(-5, 8);
-            retangulo.setBase(-5);
-            retangulo.setAltura(-5);
+            Retangulo pessoa = new Retangulo(5.0, 5.0);
+            pessoa.setAltura(-5.0);
         });
     }
 
    @Test
-    public void constroiComValorValido() {
-        Retangulo retangulo = new Retangulo(5, 6);
-        assertEquals((retangulo.getAltura() + retangulo.getBase()), 11);
-    }
+    public void constroiComValorValidoAltura() {
+        Retangulo pessoa = new Retangulo(5.0, 5.0);
+        assertEquals(pessoa.getAltura(), 5);
+    }     
 
-    @Test
-    public void setComValorValido() {
-        Retangulo retangulo = new Retangulo(5, 6);
-        retangulo.setBase(10);
-        retangulo.setAltura(11);
-        assertEquals((retangulo.getAltura() + retangulo.getBase()), 21);
-    }
+   @Test
+    public void constroiComValorValidoBase() {
+        Retangulo pessoa = new Retangulo(5.0, 5.0);
+        assertEquals(pessoa.getBase(), 5);
+    }  
+
+   @Test
+    public void setComValorValidoAltura() {
+        Retangulo pessoa = new Retangulo(5.0, 5.0);
+        pessoa.setAltura(2);
+        assertEquals(pessoa.getAltura(), 2);
+    }     
+
+   @Test
+    public void setComValorValidoBase() {
+        Retangulo pessoa = new Retangulo(5.0, 5.0);
+        pessoa.setBase(2);
+        assertEquals(pessoa.getBase(), 2);
+    }  
     
 }
