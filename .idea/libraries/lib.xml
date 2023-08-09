@@ -2,10 +2,10 @@
   <library name="lib">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/junit-platform-console-standalone-1.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-21.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/j-text-utils-0.3.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.6.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/opencsv-2.4.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/guava-21.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
