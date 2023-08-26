@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="474c85c5-03fa-41ec-a972-049e60098eda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/semana20/Exame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana20/ExameTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana20/MultipleChoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana20/OnlyChoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana20/Option.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana20/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana20/QuestionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana20/TrueOrFalse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/Exame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/Exame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/ExameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/ExameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/MultipleChoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/MultipleChoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/OnlyChoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/OnlyChoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/Option.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/TrueOrFalse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/TrueOrFalse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/Exame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/Exame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/ExameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/ExameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/MultipleChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/MultipleChoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/OnlyChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/OnlyChoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/Option.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/QuestionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/TrueOrFalse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/TrueOrFalse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,14 +48,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -52,7 +62,22 @@
       <recent name="semana20" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExameTest.exame">
+  <component name="RunManager" selected="JUnit.ExameTest.testFullExame">
+    <configuration name="ExameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lp1-231" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="semana20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="semana20" />
+      <option name="MAIN_CLASS_NAME" value="semana20.ExameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExameTest.exame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lp1-231" />
       <extension name="coverage">
@@ -69,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExameTest.testComprehensiveExame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lp1-231" />
       <extension name="coverage">
         <pattern>
@@ -78,14 +103,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="semana20" />
-      <option name="MAIN_CLASS_NAME" value="semana20.QuestionTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="semana20.ExameTest" />
+      <option name="METHOD_NAME" value="testComprehensiveExame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionTest.testMultipleChoice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExameTest.testExameFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lp1-231" />
       <extension name="coverage">
         <pattern>
@@ -94,14 +119,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="semana20" />
-      <option name="MAIN_CLASS_NAME" value="semana20.QuestionTest" />
-      <option name="METHOD_NAME" value="testMultipleChoice" />
+      <option name="MAIN_CLASS_NAME" value="semana20.ExameTest" />
+      <option name="METHOD_NAME" value="testExameFunctionality" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionTest.testTrueOrFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExameTest.testFullExame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lp1-231" />
       <extension name="coverage">
         <pattern>
@@ -110,8 +135,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="semana20" />
-      <option name="MAIN_CLASS_NAME" value="semana20.QuestionTest" />
-      <option name="METHOD_NAME" value="testTrueOrFalse" />
+      <option name="MAIN_CLASS_NAME" value="semana20.ExameTest" />
+      <option name="METHOD_NAME" value="testFullExame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,10 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExameTest.testFullExame" />
+        <item itemvalue="JUnit.ExameTest" />
+        <item itemvalue="JUnit.ExameTest.testComprehensiveExame" />
+        <item itemvalue="JUnit.ExameTest.testExameFunctionality" />
         <item itemvalue="JUnit.ExameTest.exame" />
-        <item itemvalue="JUnit.QuestionTest.testMultipleChoice" />
-        <item itemvalue="JUnit.QuestionTest.testTrueOrFalse" />
-        <item itemvalue="JUnit.QuestionTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -147,5 +173,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/semana20/Exame.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/semana20/ExameTest.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
