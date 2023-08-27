@@ -1,16 +1,53 @@
-package semana20;
+package semana20.exercicio;
 
 import java.util.*;
-import java.util.stream.Stream;
 
-public class Exame {
+public class Exam {
     private final Map<Question, Integer> questions;
     private final Map<Question, Object> answers;
 
-    public Exame(List<Question> questions) {
+    public Exam(List<Question> questions) {
         this.answers = new HashMap<>();
         this.questions = new HashMap<>();
         setQuestions(questions);
+    }
+
+    public Map<Question, Integer> getQuestions() {
+        return questions;
+    }
+
+    private Question getQuestionByNumber(int number){
+        for (Question question :
+                questions.keySet()) {
+            if (question.getNumber() == number) return question;
+        }
+        return null;
+    }
+
+    public List<Question> getSortedQuestions() {
+        List<Question> list = new ArrayList<>();
+        for (Question question :
+                questions.keySet()) {
+            if (list.isEmpty()) {
+                list.add(question);
+            } else {
+                int length = list.size();
+                for (int i = 0; i < length; i++) {
+                    if (list.get(i).getNumber() > question.getNumber()) {
+                        list.add(i, question);
+                        break;
+                    } else if (i + 1 == list.size()) {
+                        list.add(question);
+                    }
+                }
+            }
+        }
+        return list;
+    }
+
+    public int getPontuation() throws IllegalAccessException {
+        if (Collections.frequency(questions.values(), -1) > 0) throw new IllegalAccessException("Responda todas as questões antes de ver sua pontuação");
+        return questions.values().stream().mapToInt(Integer::intValue).sum();
     }
 
     public void setQuestions(List<Question> questions) throws IllegalArgumentException{
@@ -49,23 +86,6 @@ public class Exame {
         if (question.choice(answer)) questions.replace(question, 1);
         else questions.replace(question, 0);
         answers.put(question, answer);
-    }
-
-    public Map<Question, Integer> getQuestions() {
-        return questions;
-    }
-
-    private Question getQuestionByNumber(int number){
-        for (Question question :
-                questions.keySet()) {
-            if (question.getNumber() == number) return question;
-        }
-        return null;
-    }
-
-    public int getPontuation() throws IllegalAccessException {
-        if (Collections.frequency(questions.values(), -1) > 0) throw new IllegalAccessException("Responda todas as questões antes de ver sua pontuação");
-        return questions.values().stream().mapToInt(Integer::intValue).sum();
     }
 
     public void printExamQuestions() {
@@ -122,27 +142,6 @@ public class Exame {
             }
             System.out.println();
         }
-    }
-
-    public List<Question> getSortedQuestions() {
-        List<Question> list = new ArrayList<>();
-        for (Question question :
-                questions.keySet()) {
-            if (list.isEmpty()) {
-                list.add(question);
-            } else {
-                int length = list.size();
-                for (int i = 0; i < length; i++) {
-                    if (list.get(i).getNumber() > question.getNumber()) {
-                        list.add(i, question);
-                        break;
-                    } else if (i + 1 == list.size()) {
-                        list.add(question);
-                    }
-                }
-            }
-        }
-        return list;
     }
 
 }

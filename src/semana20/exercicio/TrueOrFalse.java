@@ -1,4 +1,4 @@
-package semana20;
+package semana20.exercicio;
 
 import java.util.HashMap;
 import java.util.Map;

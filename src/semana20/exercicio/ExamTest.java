@@ -1,4 +1,4 @@
-package semana20;
+package semana20.exercicio;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -8,9 +8,9 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ExameTest {
+class ExamTest {
     @Test
-    public void testExameFunctionality() throws IllegalAccessException {
+    public void testExamFunctionality() throws IllegalAccessException {
         Map<String, Boolean> options1 = new HashMap<>();
         options1.put("Alternativa 1", false);
         options1.put("Alternativa 2", false);
@@ -35,33 +35,33 @@ class ExameTest {
         questions.add(question2);
         questions.add(question3);
 
-        Exame exame = new Exame(questions);
+        Exam exam = new Exam(questions);
 
-        exame.answer(question1, "Alternativa 3");
-        exame.answer(question2, "Verdadeiro");
-        exame.answer(question3, new String[]{"Branco", "Amarelo", "Verde", "Azul"});
+        exam.answer(question1, "Alternativa 3");
+        exam.answer(question2, "Verdadeiro");
+        exam.answer(question3, new String[]{"Branco", "Amarelo", "Verde", "Azul"});
 
-        assertEquals(question1, exame.getSortedQuestions().toArray()[0]);
-        assertEquals(question2, exame.getSortedQuestions().toArray()[1]);
-        assertEquals(question3, exame.getSortedQuestions().toArray()[2]);
+        assertEquals(question1, exam.getSortedQuestions().toArray()[0]);
+        assertEquals(question2, exam.getSortedQuestions().toArray()[1]);
+        assertEquals(question3, exam.getSortedQuestions().toArray()[2]);
 
-        assertEquals(3, exame.getPontuation());
+        assertEquals(3, exam.getPontuation());
 
         // Exceções
-        assertThrows(IllegalArgumentException.class, () -> exame.answer(4, "Falso")); // Numero invalido
-        assertThrows(IllegalArgumentException.class, () -> exame.answer(question1, "Invalid")); // Alternativa invalida
-        assertThrows(IllegalArgumentException.class, () -> exame.answer(question2, "Invalid")); // Alternativa invalida
-        assertThrows(IllegalArgumentException.class, () -> exame.answer(question3, new String[]{"Invalid", "Invalid"})); // Alternativa invalida
+        assertThrows(IllegalArgumentException.class, () -> exam.answer(4, "Falso")); // Numero invalido
+        assertThrows(IllegalArgumentException.class, () -> exam.answer(question1, "Invalid")); // Alternativa invalida
+        assertThrows(IllegalArgumentException.class, () -> exam.answer(question2, "Invalid")); // Alternativa invalida
+        assertThrows(IllegalArgumentException.class, () -> exam.answer(question3, new String[]{"Invalid", "Invalid"})); // Alternativa invalida
 
-        exame.answer(question1, "Alternativa 1");
-        exame.answer(question2, "Verdadeiro");
-        exame.answer(question3, new String[]{"Branco", "Preto", "Azul"});
+        exam.answer(question1, "Alternativa 1");
+        exam.answer(question2, "Verdadeiro");
+        exam.answer(question3, new String[]{"Branco", "Preto", "Azul"});
 
-        assertEquals(1, exame.getPontuation());
+        assertEquals(1, exam.getPontuation());
     }
 
     @Test
-    public void testFullExame() throws IllegalAccessException {
+    public void testFullExam() throws IllegalAccessException {
         Map<String, Boolean> options1 = new HashMap<>();
         options1.put("Alternativa 1", false);
         options1.put("Alternativa 2", false);
@@ -129,29 +129,29 @@ class ExameTest {
         questions.add(question9);
         questions.add(question10);
 
-        Exame exame = new Exame(questions);
+        Exam exam = new Exam(questions);
 
-        assertThrows(IllegalAccessException.class, exame::printAnsweredExam);
-        exame.printExamQuestions();
+        assertThrows(IllegalAccessException.class, exam::printAnsweredExam);
+        exam.printExamQuestions();
 
-        exame.answer(question1, "Alternativa 3");
-        exame.answer(question2, "Verdadeiro");
-        exame.answer(question3, new String[]{"Branco", "Amarelo", "Verde", "Azul"});
-        exame.answer(question4, "Falso");
-        exame.answer(question5, new String[]{"Alternativa A", "Alternativa C"});
-        exame.answer(question6, new String[]{"Amarelo", "Verde", "Azul"});
-        exame.answer(question7, "Verdadeiro");
-        exame.answer(question8, "Opção 1");
-        exame.answer(question9, new String[]{"Alternativa Y", "Alternativa Z"});
-        exame.answer(question10, "Opção 3");
+        exam.answer(question1, "Alternativa 3");
+        exam.answer(question2, "Verdadeiro");
+        exam.answer(question3, new String[]{"Branco", "Amarelo", "Verde", "Azul"});
+        exam.answer(question4, "Falso");
+        exam.answer(question5, new String[]{"Alternativa A", "Alternativa C"});
+        exam.answer(question6, new String[]{"Amarelo", "Verde", "Azul"});
+        exam.answer(question7, "Verdadeiro");
+        exam.answer(question8, "Opção 1");
+        exam.answer(question9, new String[]{"Alternativa Y", "Alternativa Z"});
+        exam.answer(question10, "Opção 3");
 
-        exame.printAnsweredExam();
+        exam.printAnsweredExam();
 
-        assertEquals(6, exame.getPontuation());  // 7 respostas corretas
+        assertEquals(6, exam.getPontuation());  // 7 respostas corretas
     }
 
     @Test
-    public void testComprehensiveExame() throws IllegalAccessException {
+    public void testComprehensiveExam() throws IllegalAccessException {
         Map<String, Boolean> options1 = new HashMap<>();
         options1.put("Alternativa 1", false);
         options1.put("Alternativa 2", false);
@@ -181,36 +181,36 @@ class ExameTest {
         questions.add(question3);
         questions.add(duplicateQuestion);
 
-        // Criação de exame com pergunta duplicada
-        assertThrows(IllegalArgumentException.class, () -> new Exame(questions));
+        // Criação de exam com pergunta duplicada
+        assertThrows(IllegalArgumentException.class, () -> new Exam(questions));
 
         // Remoção da pergunta duplicada
         questions.remove(duplicateQuestion);
 
-        Exame exame = new Exame(questions);
+        Exam exam = new Exam(questions);
 
         // Alternativas ou perguntas inexistentes
-        assertThrows(IllegalArgumentException.class, () -> exame.answer(null, "Alternativa 3"));
-        assertThrows(IllegalArgumentException.class, () -> exame.answer(duplicateQuestion, "Alternativa 3"));
+        assertThrows(IllegalArgumentException.class, () -> exam.answer(null, "Alternativa 3"));
+        assertThrows(IllegalArgumentException.class, () -> exam.answer(duplicateQuestion, "Alternativa 3"));
 
         // Alternativa de multipla escolha para pergunta de unica escolha
-        assertThrows(IllegalAccessError.class, () -> exame.answer(question1, new String[]{"Alternativa 1"}));
+        assertThrows(IllegalAccessError.class, () -> exam.answer(question1, new String[]{"Alternativa 1"}));
 
         // Numero da questao incorreto
-        assertThrows(IllegalArgumentException.class, () -> exame.answer(11, "Alternativa 3"));
+        assertThrows(IllegalArgumentException.class, () -> exam.answer(11, "Alternativa 3"));
 
-        // Questão inexistente para o Exame
+        // Questão inexistente para o Exam
         OnlyChoice unaddedQuestion = new OnlyChoice(5, "Pergunta não adicionada", options1);
-        assertThrows(IllegalArgumentException.class, () -> exame.answer(unaddedQuestion, "Alternativa 3"));
+        assertThrows(IllegalArgumentException.class, () -> exam.answer(unaddedQuestion, "Alternativa 3"));
 
-        exame.answer(question3, new String[]{"Branco", "Amarelo", "Verde", "Azul"});
+        exam.answer(question3, new String[]{"Branco", "Amarelo", "Verde", "Azul"});
 
-        assertThrows(IllegalAccessException.class, exame::getPontuation);
+        assertThrows(IllegalAccessException.class, exam::getPontuation);
 
-        exame.answer(question1, "Alternativa 3");
-        exame.answer(question2, "Verdadeiro");
+        exam.answer(question1, "Alternativa 3");
+        exam.answer(question2, "Verdadeiro");
 
-        assertEquals(3, exame.getPontuation());
+        assertEquals(3, exam.getPontuation());
     }
 
 }

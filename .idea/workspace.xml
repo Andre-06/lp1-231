@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="474c85c5-03fa-41ec-a972-049e60098eda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/Exame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/Exame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/ExameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/ExameTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/MultipleChoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/MultipleChoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/OnlyChoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/OnlyChoice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/Option.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lp1-231/semana20/TrueOrFalse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lp1-231/semana20/TrueOrFalse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semana20/Exame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/Exame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semana20/ExameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/ExameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semana20/MultipleChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/MultipleChoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semana20/OnlyChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/OnlyChoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semana20/Option.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semana20/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semana20/QuestionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semana20/TrueOrFalse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/TrueOrFalse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/Exame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana20/ExameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana20/ExamTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Andre Araujo &lt;andre.araujosilva2006@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,7 +42,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/andre/OneDrive/Documentos/Java/lp1-231"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,12 +54,27 @@
       <recent name="semana20" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExameTest.testFullExame">
+  <component name="RunManager" selected="JUnit.ExamTest">
+    <configuration name="ExamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lp1-231" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="semana20.exercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="semana20.exercicio" />
+      <option name="MAIN_CLASS_NAME" value="semana20.exercicio.ExamTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lp1-231" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="semana20.*" />
+          <option name="PATTERN" value="semana20.exercicio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,27 +85,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExameTest.exame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lp1-231" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="semana20.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="semana20" />
-      <option name="MAIN_CLASS_NAME" value="semana20.ExameTest" />
-      <option name="METHOD_NAME" value="exame" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExameTest.testComprehensiveExame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lp1-231" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="semana20.*" />
+          <option name="PATTERN" value="semana20.exercicio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,7 +105,7 @@
       <module name="lp1-231" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="semana20.*" />
+          <option name="PATTERN" value="semana20.exercicio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,7 +121,7 @@
       <module name="lp1-231" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="semana20.*" />
+          <option name="PATTERN" value="semana20.exercicio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExamTest" />
         <item itemvalue="JUnit.ExameTest.testFullExame" />
         <item itemvalue="JUnit.ExameTest" />
         <item itemvalue="JUnit.ExameTest.testComprehensiveExame" />
         <item itemvalue="JUnit.ExameTest.testExameFunctionality" />
-        <item itemvalue="JUnit.ExameTest.exame" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +152,15 @@
       <option name="presentableId" value="Default" />
       <updated>1692722069573</updated>
     </task>
+    <task id="LOCAL-00001" summary="Semana 20 exercícios completos">
+      <option name="closed" value="true" />
+      <created>1693014820666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693014820666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,18 +174,17 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Semana 20 exercícios completos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Semana 20 exercícios completos" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/semana20/Exame.java</url>
-          <line>105</line>
+          <url>file://$PROJECT_DIR$/src/semana20/Exam.java</url>
+          <line>104</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/semana20/ExameTest.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
