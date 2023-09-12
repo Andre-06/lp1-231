@@ -4,10 +4,10 @@ import java.sql.*;
 
 public class ListarAlunos {
     public static void main(String[] args) throws SQLException {
-        String url = "jdbc:mysql://localhost/estudante?user=estudante&password=estudante&useSSL=true";
+        String url = "jdbc:mysql://localhost/lp1?user=root&password=1234&useSSL=true";
         Connection connection = DriverManager.getConnection(url);
 
-        String sql = "SELECT * FROM aluninhos;";
+        String sql = "SELECT * FROM alunos;";
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery(sql);
 

@@ -11,10 +11,10 @@ public class Main {
     // Java App ---> JDBC -> DRIVER (Bilbioteca que )
     public static void main(String[] args) throws SQLException {
         // 1 - Abrir a conexão
-        String url = "jdbc:mysql://localhost/estudante?user=estudante&password=estudante&useSSL=true";
+        String url = "jdbc:mysql://localhost/lp1?user=root&password=1234&useSSL=true";
         Connection connection = DriverManager.getConnection(url);
 
-        String sql = "CREATE TABLE aluninhos(id INT PRIMARY KEY, nome VARCHAR(100), email VARCHAR(255), ativo BOOL);";
+        String sql = "CREATE TABLE alunos(id INT PRIMARY KEY, nome VARCHAR(100), email VARCHAR(255), ativo BOOL);";
         Statement stmt = connection.createStatement();
         stmt.execute(sql);
 

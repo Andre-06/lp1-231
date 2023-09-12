@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="474c85c5-03fa-41ec-a972-049e60098eda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-j-8.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana22/InserirAluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana22/ListarAlunos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/semana22/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/semana22/AtualizarAluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/semana22/BuscarAlunoPorId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/semana22/BuscarAlunoPorNome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/semana22/DeletarAluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana22/InserirAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana22/InserirAluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana22/ListarAlunos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana22/ListarAlunos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semana22/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semana22/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +23,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,11 +44,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../elixir-api" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/OneDrive/Documentos/Java/lp1-231&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -55,26 +59,13 @@
       <recent name="semana20" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="semana22.Main" />
       <module name="lp1-231" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="semana22.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="semana21.Main" />
-      <module name="lp1-231" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="semana21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,6 +103,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExameTest.testComprehensiveExame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lp1-231" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="semana20.exercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="semana20" />
+      <option name="MAIN_CLASS_NAME" value="semana20.ExameTest" />
+      <option name="METHOD_NAME" value="testComprehensiveExame" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExameTest.testFullExame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lp1-231" />
       <extension name="coverage">
@@ -130,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ExamTest" />
         <item itemvalue="JUnit.ExameTest.testFullExame" />
         <item itemvalue="JUnit.ExameTest" />
+        <item itemvalue="JUnit.ExameTest.testComprehensiveExame" />
       </list>
     </recent_temporary>
   </component>
