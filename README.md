@@ -1,4 +1,4 @@
-# Aulas de LP1
+# Aulas de Linguagem de Progração 1
 
 Repositório destinado ao conteúdo de LP1.
 
